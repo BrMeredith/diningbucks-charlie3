@@ -1,1 +1,1562 @@
+.frame {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 10px 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .dawsyn-dozier-wrapper {
+  display: flex;
+  height: 2524px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.frame .dawsyn-dozier {
+  position: relative;
+  width: 3881px;
+  height: 2524px;
+  background-color: #ffffff;
+}
+
+.frame .rectangle {
+  position: absolute;
+  top: 456px;
+  left: 334px;
+  width: 3245px;
+  height: 2064px;
+}
+
+.frame .div {
+  position: absolute;
+  top: 250px;
+  left: 318px;
+  width: 464px;
+  height: 202px;
+  background-color: var(--colors-accents-red);
+}
+
+.frame .monday-header {
+  position: absolute;
+  top: 250px;
+  left: 318px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-2 {
+  position: absolute;
+  top: 250px;
+  left: 782px;
+  width: 464px;
+  height: 202px;
+  background-color: #d9d9d9;
+}
+
+.frame .tuesday-header {
+  position: absolute;
+  top: 250px;
+  left: 782px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-3 {
+  position: absolute;
+  top: 250px;
+  left: 1245px;
+  width: 464px;
+  height: 202px;
+  background-color: var(--colors-accents-red);
+}
+
+.frame .wednesday-header {
+  position: absolute;
+  top: 250px;
+  left: 1245px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-4 {
+  position: absolute;
+  top: 250px;
+  left: 1709px;
+  width: 464px;
+  height: 202px;
+  background-color: #d9d9d9;
+}
+
+.frame .thursday-header {
+  position: absolute;
+  top: 250px;
+  left: 1709px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-5 {
+  position: absolute;
+  top: 250px;
+  left: 2172px;
+  width: 464px;
+  height: 202px;
+  background-color: var(--colors-accents-red);
+}
+
+.frame .friday-header {
+  position: absolute;
+  top: 250px;
+  left: 2172px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-6 {
+  position: absolute;
+  top: 250px;
+  left: 2636px;
+  width: 464px;
+  height: 202px;
+  background-color: #d9d9d9;
+}
+
+.frame .rectangle-7 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3881px;
+  height: 247px;
+  background-color: #de2f2f;
+}
+
+.frame .saturday-header {
+  position: absolute;
+  top: 250px;
+  left: 2636px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .ellipse {
+  position: absolute;
+  top: 21px;
+  left: 7px;
+  width: 205px;
+  height: 205px;
+  background-color: #ffffff;
+  border-radius: 102.5px;
+}
+
+.frame .rectangle-8 {
+  position: absolute;
+  top: 250px;
+  left: 3099px;
+  width: 464px;
+  height: 202px;
+  background-color: var(--colors-accents-red);
+}
+
+.frame .OIP {
+  position: absolute;
+  top: 52px;
+  left: 46px;
+  width: 128px;
+  height: 143px;
+  aspect-ratio: 0.9;
+  object-fit: cover;
+}
+
+.frame .sunday-header {
+  position: absolute;
+  top: 250px;
+  left: 3099px;
+  width: 464px;
+  height: 202px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Bold", Helvetica;
+  font-weight: 700;
+  color: #000000;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .div-2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 96px;
+  position: absolute;
+  top: calc(50.00% - 1177px);
+  left: 314px;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  letter-spacing: 0;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.frame .line {
+  position: absolute;
+  top: 250px;
+  left: 318px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .div-wrapper-2 {
+  display: flex;
+  flex-direction: column;
+  width: 356px;
+  height: 179px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 44px 54px;
+  position: absolute;
+  top: 34px;
+  left: 3449px;
+  background-color: #d9d9d9;
+  border-radius: 90px;
+}
+
+.frame .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 48px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .img {
+  position: absolute;
+  top: 250px;
+  left: 782px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-2 {
+  position: absolute;
+  top: 250px;
+  left: 1245px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-3 {
+  position: absolute;
+  top: 250px;
+  left: 1709px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-4 {
+  position: absolute;
+  top: 250px;
+  left: 2172px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-5 {
+  position: absolute;
+  top: 250px;
+  left: 2636px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-6 {
+  position: absolute;
+  top: 250px;
+  left: 3099px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-7 {
+  position: absolute;
+  top: 250px;
+  left: 3563px;
+  width: 15px;
+  height: 2266px;
+}
+
+.frame .line-8 {
+  position: absolute;
+  top: 437px;
+  left: 318px;
+  width: 3245px;
+  height: 15px;
+}
+
+.frame .line-9 {
+  position: absolute;
+  top: 850px;
+  left: 318px;
+  width: 3245px;
+  height: 15px;
+}
+
+.frame .line-10 {
+  position: absolute;
+  top: 1263px;
+  left: 318px;
+  width: 3245px;
+  height: 15px;
+}
+
+.frame .line-11 {
+  position: absolute;
+  top: 1675px;
+  left: 318px;
+  width: 3245px;
+  height: 15px;
+}
+
+.frame .line-12 {
+  position: absolute;
+  top: 2088px;
+  left: 318px;
+  width: 3245px;
+  height: 15px;
+}
+
+.frame .calendar-day {
+  top: 470px;
+  left: 632px;
+  width: 112px;
+  font-size: 67px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-2 {
+  top: 464px;
+  left: 1119px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-3 {
+  top: 464px;
+  left: 1583px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-4 {
+  top: 464px;
+  left: 2046px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-5 {
+  top: 464px;
+  left: 2510px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-6 {
+  top: 464px;
+  left: 2973px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks {
+  top: 467px;
+  left: 356px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-2 {
+  top: 464px;
+  left: 800px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-3 {
+  top: 464px;
+  left: 1263px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-4 {
+  top: 464px;
+  left: 1727px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-5 {
+  top: 464px;
+  left: 2190px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-6 {
+  top: 464px;
+  left: 2654px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-7 {
+  top: 464px;
+  left: 3117px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-8 {
+  top: 877px;
+  left: 336px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-9 {
+  top: 877px;
+  left: 800px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-10 {
+  top: 877px;
+  left: 1263px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-11 {
+  top: 877px;
+  left: 1727px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-12 {
+  top: 877px;
+  left: 2190px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-13 {
+  top: 877px;
+  left: 2654px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-14 {
+  top: 877px;
+  left: 3117px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-15 {
+  top: 1290px;
+  left: 336px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-16 {
+  top: 1290px;
+  left: 800px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-17 {
+  top: 1290px;
+  left: 1263px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-18 {
+  top: 1290px;
+  left: 1727px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-19 {
+  top: 1290px;
+  left: 2190px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-20 {
+  top: 1290px;
+  left: 2654px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-21 {
+  top: 1290px;
+  left: 3117px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-22 {
+  top: 1702px;
+  left: 336px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-23 {
+  top: 1702px;
+  left: 800px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-24 {
+  top: 1702px;
+  left: 1263px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-25 {
+  top: 1702px;
+  left: 1727px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-26 {
+  top: 1702px;
+  left: 2190px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-27 {
+  top: 1702px;
+  left: 2654px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-28 {
+  top: 1702px;
+  left: 3117px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-29 {
+  top: 2115px;
+  left: 336px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-30 {
+  top: 2115px;
+  left: 800px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-31 {
+  top: 2115px;
+  left: 1263px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-32 {
+  top: 2115px;
+  left: 1727px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-33 {
+  top: 2115px;
+  left: 2190px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-34 {
+  top: 2115px;
+  left: 2654px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .daily-dining-bucks-35 {
+  top: 2115px;
+  left: 3117px;
+  position: absolute;
+  width: 300px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 96px;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-7 {
+  top: 464px;
+  left: 3437px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-8 {
+  top: 877px;
+  left: 656px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-9 {
+  top: 877px;
+  left: 1119px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-10 {
+  top: 877px;
+  left: 1583px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-11 {
+  top: 877px;
+  left: 2046px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-12 {
+  top: 877px;
+  left: 2510px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-13 {
+  top: 877px;
+  left: 2973px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-14 {
+  top: 877px;
+  left: 3437px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-15 {
+  top: 1290px;
+  left: 656px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-16 {
+  top: 1290px;
+  left: 1119px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-17 {
+  top: 1290px;
+  left: 1583px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-18 {
+  top: 1290px;
+  left: 2046px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-19 {
+  top: 1290px;
+  left: 2510px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-20 {
+  top: 1290px;
+  left: 2973px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-21 {
+  top: 1290px;
+  left: 3437px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-22 {
+  top: 1702px;
+  left: 656px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-23 {
+  top: 1702px;
+  left: 1119px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-24 {
+  top: 1702px;
+  left: 1583px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-25 {
+  top: 1702px;
+  left: 2046px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-26 {
+  top: 1702px;
+  left: 2510px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-27 {
+  top: 1702px;
+  left: 2973px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-28 {
+  top: 1702px;
+  left: 3437px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-29 {
+  top: 2115px;
+  left: 656px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-30 {
+  top: 2115px;
+  left: 1119px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .calendar-day-31 {
+  top: 2115px;
+  left: 1583px;
+  width: 108px;
+  font-size: 64px;
+  position: absolute;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  text-align: right;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-9 {
+  position: absolute;
+  top: 452px;
+  left: 0;
+  width: 318px;
+  height: 413px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: #000000;
+}
+
+.frame .weekly-dining-bucks {
+  top: calc(50.00% - 679px);
+  left: calc(50.00% - 1916px);
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-10 {
+  position: absolute;
+  top: 865px;
+  left: 0;
+  width: 318px;
+  height: 413px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: #000000;
+}
+
+.frame .weekly-dining-bucks-2 {
+  top: 996px;
+  left: 24px;
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-11 {
+  position: absolute;
+  top: 1278px;
+  left: 0;
+  width: 318px;
+  height: 413px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: #000000;
+}
+
+.frame .weekly-dining-bucks-3 {
+  top: 1409px;
+  left: 24px;
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-12 {
+  position: absolute;
+  top: 1690px;
+  left: 0;
+  width: 318px;
+  height: 413px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: #000000;
+}
+
+.frame .weekly-dining-bucks-4 {
+  top: 1822px;
+  left: 24px;
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-13 {
+  position: absolute;
+  top: 2103px;
+  left: 0;
+  width: 318px;
+  height: 413px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: #000000;
+}
+
+.frame .weekly-dining-bucks-5 {
+  top: calc(50.00% + 973px);
+  left: calc(50.00% - 1916px);
+  position: absolute;
+  width: 270px;
+  height: 150px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 32px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .rectangle-14 {
+  position: absolute;
+  top: 860px;
+  left: 3581px;
+  width: 300px;
+  height: 1232px;
+  background-color: #d9d9d9;
+  border: 15px solid;
+  border-color: var(--colors-grays-black);
+}
+
+.frame .text-wrapper-3 {
+  position: absolute;
+  top: 947px;
+  left: 3601px;
+  width: 260px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .ellipse-2 {
+  position: absolute;
+  top: 1089px;
+  left: 3681px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--colors-accents-green);
+  border-radius: 50px;
+  border: 8px solid;
+  border-color: #000000;
+}
+
+.frame .ellipse-3 {
+  position: absolute;
+  top: 1409px;
+  left: 3681px;
+  width: 100px;
+  height: 100px;
+  background-color: var(--colors-grays-white);
+  border-radius: 50px;
+  border: 8px solid;
+  border-color: #000000;
+}
+
+.frame .text-wrapper-4 {
+  position: absolute;
+  top: 1279px;
+  left: 3601px;
+  width: 260px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .text-wrapper-5 {
+  position: absolute;
+  top: 1599px;
+  left: 3616px;
+  width: 225px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+.frame .EDIT-button {
+  position: absolute;
+  top: 1710px;
+  left: 3606px;
+  width: 250px;
+  height: 140px;
+  background-color: var(--colors-accents-red);
+  border: 10px solid;
+  border-color: #000000;
+}
+
+.frame .text-wrapper-6 {
+  position: absolute;
+  top: 1710px;
+  left: 3606px;
+  width: 250px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #000000;
+  font-size: 64px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: normal;
+}
 
