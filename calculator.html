@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Buck Planner Calculator</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1>Dining Bucks Calculator</h1>
+    <div class="nav-bar">
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Calender</a></li>
+                <li><a href="">Budget Plan</a></li>
+                <li><a href="">Calculator</a></li>
+                <li><a href="">Find Restaurants</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <p1>Welcome to the <strong>Calculator</strong>.<br>
+            Enter the below information to calculate a dining plan.</p1>
+        <br><br>
+        <form action="/calculator.html" method="POST">
+            <label for="current_dining_bucks_amount">Current Dining Bucks Amount:</label><br>
+            <input type="number" id="quantity" name="quantity" required>
+            <br><br>
+            <label for="amount_by_end_of_year">Amount You Want to Have Leftover by the End of the Year:</label><br>
+            <input type="number" id="quantity" name="quantity" required>
+            <br><br>
+            <label for="amount_in_rainy_day_fund">Amount You Want In Your Rainy Day Fund:</label><br>
+            <input type="number" id="quantity" name="quantity" required>
+            <br><br>
+            <fieldset required>
+                <legend>Days You Normally Use Your Dining Plan:</legend>
+                <input type="checkbox" id="Sunday" name="Weekdays" value="Monday">
+                <label for="Sunday">Sunday</label>
+                
+                <input type="checkbox" id="Monday" name="Weekdays" value="Monday">
+                <label for="Monday">Monday</label>
+
+                <input type="checkbox" id="Tuesday" name="Weekdays" value="Monday">
+                <label for="Tuesday">Tuesday</label>
+
+                <input type="checkbox" id="Wednesday" name="Weekdays" value="Monday">
+                <label for="Wednesday">Wednesday</label>
+
+                <input type="checkbox" id="Thursday" name="Weekdays" value="Monday">
+                <label for="Thursday">Thursday</label>
+
+                <input type="checkbox" id="Friday" name="Weekdays" value="Monday">
+                <label for="Friday">Friday</label>
+
+                <input type="checkbox" id="Saturday" name="Weekdays" value="Monday">
+                <label for="Saturday">Saturday</label>
+            </fieldset>
+            <br>
+            <label for="start_date">Start Date</label><br>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <label for="end_date">End Date</label><br>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+            <button type="submit">Submit Information</button>
+        </form>
+    </div>
+</body>
+</html>
