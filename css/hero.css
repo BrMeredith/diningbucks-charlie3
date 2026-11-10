@@ -1,0 +1,171 @@
+
+/* RaiderBites - Restaurant Hero */
+
+.hero {
+  min-height: 620px;
+  display: flex;
+  align-items: center;
+  padding: 85px 8%;
+
+  background:
+    linear-gradient(
+      90deg,
+      #161514 0%,
+      rgba(22, 21, 20, 0.96) 30%,
+      rgba(22, 21, 20, 0.65) 60%,
+      rgba(22, 21, 20, 0.15) 100%
+    ),
+    url('https://images.unsplash.com/photo-1558030006-450675393462?w=1600&auto=format&fit=crop&q=85');
+
+  background-size: cover;
+  background-position: center;
+}
+
+/* Main Hero Content */
+
+.hero-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.hero .eyebrow {
+  color: #c49a6c;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 68px);
+  font-weight: normal;
+  line-height: 1.15;
+  letter-spacing: -1px;
+
+  max-width: 650px;
+  margin: 22px 0;
+  color: #f6f0e7;
+}
+
+.hero h1 span {
+  color: #c49a6c;
+}
+
+.hero-content > p {
+  color: #c7beb3;
+  font-size: 15px;
+  max-width: 480px;
+  margin-bottom: 35px;
+}
+
+/* Restaurant Search */
+
+.search-box {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  max-width: 900px;
+  padding: 12px;
+
+  background: rgba(25, 23, 21, 0.94);
+  border: 1px solid #51483e;
+  text-align: left;
+}
+
+.search-field {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 14px;
+}
+
+.location-field {
+  flex: 0.75;
+  border-left: 1px solid #51483e;
+}
+
+.search-field label {
+  display: block;
+  color: #c49a6c;
+  font-size: 11px;
+  letter-spacing: 0.6px;
+  margin-bottom: 6px;
+}
+
+.search-field input {
+  width: 100%;
+  padding: 6px 0;
+
+  background: transparent;
+  border: none;
+  outline: none;
+
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.search-field input::placeholder {
+  color: #938b82;
+}
+
+.search-field:focus-within {
+  background: #2b2723;
+}
+
+.search-field input:focus-visible {
+  outline: 1px solid #c49a6c;
+  outline-offset: 3px;
+}
+
+/* Search Button */
+
+.search-btn {
+  padding: 17px 25px;
+  background: #c49a6c;
+  color: #161514;
+
+  border: 1px solid #c49a6c;
+  font-size: 13px;
+  font-weight: 600;
+  white-space: nowrap;
+
+  transition: background 0.2s;
+}
+
+.search-btn:hover {
+  background: #e0bb8e;
+}
+
+.search-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Quick Search Links */
+
+.quick-search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.quick-search span {
+  color: #b5aca1;
+  font-size: 12px;
+}
+
+.quick-search a {
+  color: #e4dbd0;
+  border-bottom: 1px solid #6b5d4c;
+  padding: 5px 0;
+
+  font-size: 12px;
+  transition: color 0.2s;
+}
+
+.quick-search a:hover {
+  color: #c49a6c;
+}
+
