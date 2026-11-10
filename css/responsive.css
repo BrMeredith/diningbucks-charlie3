@@ -1,0 +1,172 @@
+
+/* RaiderBites - Responsive Design */
+
+/* Smaller laptops and tablets */
+@media (max-width: 1200px) {
+
+  .desktop-nav,
+  .signout-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .restaurant-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+  section {
+    padding: 60px 6%;
+  }
+
+  .site-header {
+    height: 70px;
+    padding: 0 6%;
+  }
+
+  .hero {
+    min-height: 570px;
+    padding: 75px 6%;
+    background-position: 60% center;
+  }
+
+  .hero h1 {
+    font-size: 45px;
+    max-width: 550px;
+  }
+
+  .hero-content > p {
+    font-size: 14px;
+    max-width: 420px;
+  }
+
+  /* Stack search fields */
+  .search-box {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 15px;
+    gap: 12px;
+  }
+
+  .search-field,
+  .location-field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #51483e;
+  }
+
+  .search-btn {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .dining-tip {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/* Mobile Phones */
+@media (max-width: 550px) {
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .logo-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .hero {
+    min-height: 590px;
+    padding: 65px 6%;
+    background:
+      linear-gradient(
+        rgba(22, 21, 20, 0.82),
+        rgba(22, 21, 20, 0.94)
+      ),
+      url('https://images.unsplash.com/photo-1558030006-450675393462?w=900&auto=format&fit=crop&q=80');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero h1 {
+    font-size: 37px;
+    letter-spacing: -0.5px;
+  }
+
+  .quick-search {
+    gap: 10px;
+  }
+
+  .quick-search span {
+    width: 100%;
+  }
+
+  /* Single column restaurant cards */
+  .restaurant-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .food-card img {
+    height: 235px;
+  }
+
+  .card-content {
+    padding: 22px;
+  }
+
+  /* Scrollable category filters */
+  .filter-controls {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 9px;
+    padding-bottom: 12px;
+  }
+
+  .filter-controls label {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .section-heading h2 {
+    font-size: 32px;
+  }
+
+  .dining-tip h2 {
+    font-size: 30px;
+  }
+
+  .budget-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .food-card,
+  .search-btn {
+    transition: none;
+  }
+}
