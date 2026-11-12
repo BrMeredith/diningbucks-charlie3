@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #111;
+  background: #fff;
+}
+
+.topbar {
+  height: 41px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 11px 0 3px;
+  background: #e52b2e;
+}
+
+.brand {
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #fff;
+  color: #d52326;
+  font-family: Georgia, serif;
+  font-size: 23px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.topbar nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+}
+
+.topbar nav a {
+  color: #111;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.topbar nav a[aria-current="page"] {
+  font-weight: 700;
+}
+
+.screen[hidden] {
+  display: none;
+}
+
+.simple-screen {
+  min-height: 220px;
+  padding: 32px 24px;
+}
+
+.simple-screen h1 {
+  margin: 0 0 12px;
+  font-size: 24px;
+}
+
+.simple-screen p {
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.return-link {
+  color: #111;
+  font-size: 14px;
+}
+
+.sign-out {
+  border: 0;
+  border-radius: 18px;
+  padding: 8px 15px;
+  background: #eee;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.calendar-layout {
+  position: relative;
+  display: grid;
+  grid-template-columns: 55px minmax(0, 1fr) 47px;
+  align-items: start;
+  padding: 0 0 0 3px;
+}
+
+.calendar {
+  min-width: 0;
+}
+
+.weekdays,
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+}
+
+.weekdays > div {
+  height: 33px;
+  display: grid;
+  place-items: center;
+  background: #dedede;
+  border: 1px solid #111;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.weekdays > div:nth-child(3),
+.weekdays > div:nth-child(7) {
+  background: #ef3438;
+}
+
+.day {
+  position: relative;
+  height: 66px;
+  padding: 4px 4px;
+  overflow: hidden;
+  background: #d8d8d8;
+  border: 1px solid #111;
+}
+
+.day > span {
+  font-size: 16px;
+  white-space: nowrap;
+}
+
+.day small {
+  position: absolute;
+  top: 5px;
+  right: 4px;
+  font-size: 10px;
+}
+
+.empty {
+  background: #fff;
+}
+
+.recommendations {
+  display: grid;
+  grid-template-rows: repeat(5, 66px);
+  padding-top: 33px;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #111;
+  background: #d8d8d8;
+  text-align: center;
+  font-size: 6px;
+  line-height: 1.15;
+}
+
+.recommendation b {
+  font-weight: 400;
+}
+
+.plan {
+  position: absolute;
+  top: 99px;
+  right: 0;
+  width: 47px;
+  min-height: 197px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 5px 2px;
+  border: 2px solid #111;
+  background: #d8d8d8;
+  text-align: center;
+  font-size: 7px;
+  line-height: 1.15;
+}
+
+.dot {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.dot.green {
+  background: #36c65c;
+}
+
+.plan button {
+  border: 1px solid #111;
+  background: #ff393d;
+  padding: 4px 6px;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .topbar {
+    gap: 8px;
+    padding-right: 6px;
+  }
+
+  .topbar nav {
+    gap: 8px;
+    overflow-x: auto;
+  }
+
+  .topbar nav a {
+    font-size: 10px;
+  }
+
+  .calendar-layout {
+    grid-template-columns: 44px minmax(0, 1fr) 42px;
+    padding-left: 2px;
+  }
+
+  .weekdays > div {
+    font-size: 8px;
+  }
+
+  .day > span {
+    font-size: clamp(10px, 3vw, 15px);
+  }
+}
+
