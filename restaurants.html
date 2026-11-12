@@ -1,0 +1,254 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Find restaurants and food options near Texas Tech University.">
+
+  <title>Find Restaurants | Dining Bucks Planner</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <a href="home.html" class="logo">
+      <span class="logo-icon">TT</span>
+      <span>Raider<span class="logo-red">Bites</span></span>
+    </a>
+
+    <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calendar.html">Calender</a></li>
+                <li><a href="planner.html">Budget Plan</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="restaurants.html">Find Restaurants</a></li>
+            </ul>
+        </nav>
+
+    <a href="signout.html" class="signout-btn">Sign Out</a>
+
+    <details class="mobile-menu">
+      <summary>Menu</summary>
+      <nav aria-label="Mobile navigation">
+        <a href="home.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="budget.html">Budget Plan</a>
+        <a href="change-plan.html">Change Plan</a>
+        <a href="events.html">Events</a>
+        <a href="deals.html">Deals & Coupons</a>
+        <a href="index.html">Restaurants</a>
+        <a href="signout.html">Sign Out</a>
+      </nav>
+    </details>
+  </header>
+
+  <main>
+
+    <!-- Search Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <span class="eyebrow">MADE FOR RED RAIDERS</span>
+
+        <h1>Hungry? Let's find <span>something good.</span></h1>
+
+        <p>
+          Discover restaurants, explore your cravings,
+          and find great food around Texas Tech.
+        </p>
+
+        <form class="search-box"
+              action="https://www.yelp.com/search"
+              method="get"
+              target="_blank">
+
+          <div class="search-field">
+            <label for="restaurant-search">Restaurant or food</label>
+            <input
+              type="search"
+              id="restaurant-search"
+              name="find_desc"
+              placeholder="Pizza, tacos, Chick-fil-A..."
+              required>
+          </div>
+
+          <div class="search-field location-field">
+            <label for="location-search">City or state</label>
+            <input
+              type="text"
+              id="location-search"
+              name="find_loc"
+              value="Lubbock, TX"
+              placeholder="City, State"
+              required>
+          </div>
+
+          <button type="submit" class="search-btn">
+            Find Restaurants
+          </button>
+        </form>
+
+        <div class="quick-search">
+          <span>Quick searches:</span>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=restaurants+near+Texas+Tech+University"
+             target="_blank" rel="noopener noreferrer">
+            Near Campus
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=cheap+restaurants+Lubbock+TX"
+             target="_blank" rel="noopener noreferrer">
+            Budget Friendly
+          </a>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=fast+food+Lubbock+TX"
+             target="_blank" rel="noopener noreferrer">
+            Quick Bites
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Restaurant Discovery -->
+    <section class="discover-section">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">EXPLORE FOOD</span>
+          <h2>What are you craving?</h2>
+          <p>Pick a category and explore restaurants nearby.</p>
+        </div>
+      </div>
+
+      <div class="restaurant-browser">
+
+        <!-- CSS-only category filters -->
+        <div class="filter-controls" role="group" aria-label="Food categories">
+          <input type="radio" name="food-filter" id="filter-all" checked>
+          <label for="filter-all">All Food</label>
+
+          <input type="radio" name="food-filter" id="filter-american">
+          <label for="filter-american">American</label>
+
+          <input type="radio" name="food-filter" id="filter-mexican">
+          <label for="filter-mexican">Mexican</label>
+
+          <input type="radio" name="food-filter" id="filter-asian">
+          <label for="filter-asian">Asian</label>
+
+          <input type="radio" name="food-filter" id="filter-cafe">
+          <label for="filter-cafe">Coffee</label>
+
+          <input type="radio" name="food-filter" id="filter-pizza">
+          <label for="filter-pizza">Pizza</label>
+        </div>
+
+        <div class="restaurant-grid">
+
+          <!-- Burgers -->
+          <article class="food-card category-american">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=700"
+                 alt="Juicy burger with toppings" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">American</span>
+              <h3>Burger Spots</h3>
+              <p>Classic burgers, fries, and comfort food.</p>
+              <a href="https://www.yelp.com/search?find_desc=burgers&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+          <!-- Mexican -->
+          <article class="food-card category-mexican">
+            <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=700"
+                 alt="Fresh Mexican tacos" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">Mexican</span>
+              <h3>Tacos & Burritos</h3>
+              <p>Fresh tacos, burritos, and bold flavors.</p>
+              <a href="https://www.yelp.com/search?find_desc=Mexican+food&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+          <!-- Asian -->
+          <article class="food-card category-asian">
+            <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=700"
+                 alt="Fresh sushi on a plate" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">Asian</span>
+              <h3>Sushi & Asian Food</h3>
+              <p>Sushi, noodles, rice bowls, and more.</p>
+              <a href="https://www.yelp.com/search?find_desc=Asian+food&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+          <!-- Coffee -->
+          <article class="food-card category-cafe">
+            <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=700"
+                 alt="Cozy coffee shop interior" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">Cafes</span>
+              <h3>Coffee & Cafes</h3>
+              <p>Coffee, snacks, and relaxing study spots.</p>
+              <a href="https://www.yelp.com/search?find_desc=coffee+shops&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+          <!-- Pizza -->
+          <article class="food-card category-pizza">
+            <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=700"
+                 alt="Freshly baked pizza" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">Italian</span>
+              <h3>Pizza Places</h3>
+              <p>Cheesy slices, fresh toppings, and more.</p>
+              <a href="https://www.yelp.com/search?find_desc=pizza&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+          <!-- Chicken -->
+          <article class="food-card category-american">
+            <img src="https://images.unsplash.com/photo-1562967914-608f82629710?w=700"
+                 alt="Crispy fried chicken" loading="lazy">
+            <div class="card-content">
+              <span class="food-type">Fast Food</span>
+              <h3>Chicken & More</h3>
+              <p>Crispy chicken, sandwiches, and quick meals.</p>
+              <a href="https://www.yelp.com/search?find_desc=chicken+restaurants&find_loc=Lubbock%2C+TX"
+                 target="_blank" rel="noopener noreferrer">Explore Places →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Dining Bucks Reminder -->
+    <section class="dining-tip">
+      <div>
+        <span class="eyebrow">SMARTER STUDENT SPENDING</span>
+        <h2>Good food. Better planning.</h2>
+        <p>
+          Explore nearby food options while keeping your budget in mind.
+          Dining Bucks are accepted only at eligible Texas Tech dining locations.
+        </p>
+      </div>
+      <a href="budget.html" class="budget-btn">View My Budget →</a>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 RaiderBites | Dining Bucks Planner</p>
+    <p>Student project • Not affiliated with Texas Tech University</p>
+  </footer>
+
+</body>
+</html>
