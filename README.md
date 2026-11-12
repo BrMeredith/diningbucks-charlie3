@@ -16,7 +16,7 @@
 3. Transaction cards with buttons to view individual purchase details.
 4. Buttons to view transaction details.
 5. Filters that let students sort transactions by date or dining location.
-# diningbucks-charlie3
+
 The repository for the Charlie 3 web app.
 
 I've made branches for everybody. Everyone work on your webpage and then we'll merge them to the main webpage when ready. We'll use the main branch to post code that we will need to share across all of our webpages.
