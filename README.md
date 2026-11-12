@@ -6,6 +6,14 @@
  **App Type**  Budget Tracker 
  
  **Problem It Solves**  Texas Tech students need an easier way to manage and track their Dining Bucks. Our app helps students monitor their spending, check their remaining balance, and plan purchases so they do not run out of Dining Bucks.
+
+ **Page 1 - Home** Home - Displays a welcome message and login feature.
+
+ **Page 2 - Budget Plan** Budget Plan - Displays saved budget plans that can be loaded into a calendar.
+
+ **Page 3 - Calculator** Calculator - A specialized calculator built for students to calculate and estimate their dinging buck usage.
+
+ **Page 4 - Find Restaurants** Find Restaurants - Displays a page where on campus food locations can be located.
  
  **Page 5 — Calendar**  Calendar – Displays a monthly calendar showing when students make Dining Bucks purchases. Students can select dates to view transactions and monitor their spending over time. There is also a recommended dining bucks limit.
 
