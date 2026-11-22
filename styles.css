@@ -28,11 +28,14 @@ body {
   border: 2px solid #fff;
   border-radius: 50%;
   background: #fff;
-  color: #d52326;
-  font-family: Georgia, serif;
-  font-size: 23px;
-  font-weight: 700;
   text-decoration: none;
+  overflow: hidden;
+}
+
+.brand img {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
 }
 
 .topbar nav {
@@ -195,13 +198,35 @@ body {
   background: #36c65c;
 }
 
-.plan button {
+.dot.red {
+  background: #ff393d;
+}
+
+.plan-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  border: 0;
+  background: transparent;
+  padding: 2px;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+.plan-option.selected {
+  font-weight: 700;
+}
+
+.plan .edit-plan {
   border: 1px solid #111;
   background: #ff393d;
   padding: 4px 6px;
   font-size: 9px;
   font-weight: 700;
 }
+
 
 @media (max-width: 600px) {
   .topbar {
@@ -231,4 +256,3 @@ body {
     font-size: clamp(10px, 3vw, 15px);
   }
 }
-
