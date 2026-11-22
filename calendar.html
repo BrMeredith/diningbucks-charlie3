@@ -9,16 +9,17 @@
   </head>
   <body>
     <header class="topbar">
-      <a class="brand" href="#home" aria-label="Home" data-nav>T</a>
-      <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="calendar.html">Calender</a></li>
-                <li><a href="planner.html">Budget Plan</a></li>
-                <li><a href="calculator.html">Calculator</a></li>
-                <li><a href="restaurants.html">Find Restaurants</a></li>
-            </ul>
-        </nav>
+      <a class="brand" href="#home" aria-label="Texas Tech University Home" data-nav>
+        <img src="texas-tech-logo.webp" alt="Texas Tech University" />
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#home" data-nav>Home</a>
+        <a href="#calendar" data-nav>Calendar</a>
+        <a href="#budget-plan" data-nav>Budget Plan</a>
+        <a href="#restaurants" data-nav>Find Restaurants</a>
+        <a href="#events" data-nav>Events</a>
+        <a href="#calculator" data-nav>Calculator</a>
+      </nav>
       <button class="sign-out" type="button">Sign Out</button>
     </header>
 
@@ -88,12 +89,18 @@
         </section>
 
         <aside class="plan" aria-label="Meal plan">
-          <div>Matador Plan</div>
-          <span class="dot green"></span>
-          <div>Red and<br />Black Plan</div>
-          <span class="dot"></span>
-          <div>Workstudy</div>
-          <button type="button">EDIT</button>
+          <button class="plan-option selected" id="matador-plan" type="button">
+            <span>Matador Plan</span>
+            <span class="dot green"></span>
+          </button>
+          <button class="plan-option" id="red-black-plan" type="button">
+            <span>Red and<br />Black Plan</span>
+            <span class="dot red"></span>
+          </button>
+          <button class="plan-option" id="workstudy-plan" type="button">
+            <span>Workstudy</span>
+          </button>
+          <button class="edit-plan" id="edit-plan" type="button">EDIT</button>
         </aside>
       </section>
 
@@ -147,6 +154,64 @@
 
       window.addEventListener("hashchange", showCurrentScreen);
       showCurrentScreen();
+
+      const matador = document.getElementById("matador-plan");
+      const redBlack = document.getElementById("red-black-plan");
+      const workstudy = document.getElementById("workstudy-plan");
+      const edit = document.getElementById("edit-plan");
+
+      let workstudyAmount = "10.25";
+
+      function showAmount(amount) {
+        const days = document.querySelectorAll(".day span");
+        for (let i = 0; i < days.length; i++) {
+          days[i].textContent = amount;
+        }
+
+        const weeklyAmount = (Number(amount) * 7).toFixed(2);
+        const weeks = document.querySelectorAll(".recommendation b");
+        for (let i = 0; i < weeks.length; i++) {
+          weeks[i].textContent = weeklyAmount;
+        }
+      }
+
+      function selectButton(button) {
+        matador.classList.remove("selected");
+        redBlack.classList.remove("selected");
+        workstudy.classList.remove("selected");
+        button.classList.add("selected");
+      }
+
+      matador.addEventListener("click", function () {
+        selectButton(matador);
+        showAmount("10.25");
+      });
+
+      redBlack.addEventListener("click", function () {
+        selectButton(redBlack);
+        showAmount("12.19");
+      });
+
+      workstudy.addEventListener("click", function () {
+        selectButton(workstudy);
+        showAmount(workstudyAmount);
+      });
+
+      edit.addEventListener("click", function () {
+        const answer = prompt("Enter monthly amount:");
+
+        if (answer !== null) {
+          const money = Number(answer);
+
+          if (money >= 0 && !isNaN(money)) {
+            workstudyAmount = (money / 31).toFixed(2);
+            selectButton(workstudy);
+            showAmount(workstudyAmount);
+          } else {
+            alert("Please enter a valid amount.");
+          }
+        }
+      });
     </script>
   </body>
 </html>
